@@ -37,11 +37,11 @@ RS485_DEVICE = {
 # MQTT Discovery를 위한 Preset 정보
 DISCOVERY_DEVICE = {
     "ids": [
-        "ezville_wallpad",
+        "ezville_wallpad_sub",
     ],
-    "name": "ezville_wallpad",
+    "name": "ezville_wallpad_sub",
     "mf": "EzVille",
-    "mdl": "EzVille Wallpad",
+    "mdl": "EzVille Wallpad Sub",
     "sw": "homkima/addons/ezville_wallpad",
 }
 
@@ -187,7 +187,7 @@ def checksum(input_hex):
 
 config_dir = "/data"
 
-HA_TOPIC = "ezville"
+HA_TOPIC = "ezville2"
 STATE_TOPIC = HA_TOPIC + "/{}/{}/state"
 EW11_TOPIC = "ew12"
 EW11_SEND_TOPIC = EW11_TOPIC + "/send"
